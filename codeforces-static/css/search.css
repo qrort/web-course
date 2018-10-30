@@ -1,0 +1,15 @@
+header nav .search {
+    position:absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+header nav .search input {
+    float: right;
+    width: 70%;
+    padding-left: 20px;
+    background: var(--light-grey) url(../img/search-16x16.png) no-repeat;
+    background-position-x: 2px;
+    background-position-y: center;
+}
+

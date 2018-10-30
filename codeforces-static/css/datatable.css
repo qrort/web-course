@@ -1,0 +1,28 @@
+.datatable {
+    border: 1px solid var(--dark-grey);
+    border-radius: var(--border-radius);
+}
+
+.datatable table, th, td {
+    border: 1px solid var(--dark-grey);
+    border-collapse: collapse;
+}
+
+.datatable .caption {
+    background-color: var(--dark-grey);
+    padding: 0.25rem;
+}
+
+.datatable tbody tr:nth-child(odd) {
+    background-color: var(--light-grey);
+}
+
+.datatable table {
+    width: 100%;
+    text-align: center;
+}
+
+.datatable thead, td {
+    height: 1.75rem;
+}
+
