@@ -11,13 +11,6 @@ import java.util.Map;
 public class RegisterPage extends BasePage {
     private UserService userService = new UserService();
 
-    public void before(HttpServletRequest request, Map <String, Object> view) {
-        super.before(request, view);
-    }
-    public void after(HttpServletRequest request, Map <String, Object> view) {
-        super.after(request, view);
-    }
-
     private void register(HttpServletRequest request, Map<String, Object> view) {
         User user = new User();
         user.setLogin(request.getParameter("login"));

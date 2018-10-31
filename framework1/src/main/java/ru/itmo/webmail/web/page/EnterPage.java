@@ -10,21 +10,15 @@ import java.util.Map;
 public class EnterPage extends BasePage {
     private UserService userService = new UserService();
 
-    public void before(HttpServletRequest request, Map<String, Object> view) {
-        super.before(request, view);
-    }
-    public void after(HttpServletRequest request, Map <String, Object> view) {
-        super.after(request, view);
-    }
     private void enter(HttpServletRequest request, Map<String, Object> view) {
         try {
-            userService.validateEntrance(request.getParameter("login"), request.getParameter("password"));
+            userService.validateEnter(request.getParameter("login"), request.getParameter("password"));
         } catch (ValidationException e) {
             view.put("login", request.getParameter("login"));
             view.put("error", e.getMessage());
             return;
         }
-        request.getSession().setAttribute("user", userService.findByLogin(request.getParameter("login")));
+        authorize(request, userService.findByLogin(request.getParameter("login")));
         throw new RedirectException("/index", "loggedIn");
     }
 

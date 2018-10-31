@@ -4,12 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 public class IndexPage extends BasePage {
-    public void before(HttpServletRequest request, Map <String, Object> view) {
-        super.before(request, view);
-    }
-    public void after(HttpServletRequest request, Map <String, Object> view) {
-        super.after(request, view);
-    }
+
     private void action() {
         // No operations.
     }

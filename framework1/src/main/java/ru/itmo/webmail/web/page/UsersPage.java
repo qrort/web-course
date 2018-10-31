@@ -8,13 +8,6 @@ import java.util.Map;
 public class UsersPage extends BasePage {
     private UserService userService = new UserService();
 
-    public void before(HttpServletRequest request, Map <String, Object> view) {
-        super.before(request, view);
-    }
-    public void after(HttpServletRequest request, Map <String, Object> view) {
-        super.after(request, view);
-    }
-
     private void action(Map<String, Object> view) {
         view.put("users", userService.findAll());
     }

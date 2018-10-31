@@ -14,7 +14,7 @@ public class UserService {
 
     private UserRepository userRepository = new UserRepositoryImpl();
 
-    public void validateEntrance(String login, String password) throws ValidationException {
+    public void validateEnter(String login, String password) throws ValidationException {
         User user = userRepository.findByLogin(login);
         if (user == null) {
             throw new ValidationException("No such user");
@@ -38,6 +38,9 @@ public class UserService {
         }
         if (userRepository.findByLogin(user.getLogin()) != null) {
             throw new ValidationException("Login is already in use");
+        }
+        if (user.getEmail() == null || user.getEmail().isEmpty()) {
+            throw new ValidationException("Email is required");
         }
         if (userRepository.findByEmail(user.getEmail()) != null) {
             throw new ValidationException("Email is already in use");
