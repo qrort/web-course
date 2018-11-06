@@ -94,4 +94,5 @@ public class UserService {
     public User find(long userId) {
         return userRepository.find(userId);
     }
+    public User findByLogin(String login) {return userRepository.findByLogin(login);}
 }

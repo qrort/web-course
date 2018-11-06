@@ -12,7 +12,7 @@ public class UsersPage extends Page{
         super.before(request, view);
 
         if (getUser() == null) {
-            throw new RedirectException("/index");
+            throw new RedirectException("/index", "unauthorized");
         }
     }
 

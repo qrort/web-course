@@ -34,6 +34,9 @@
             <#if user??>
                 <li><a href="/users">Users</a></li>
             </#if>
+            <#if user??>
+                <li><a href="/talks">Talks</a></li>
+            </#if>
         </ul>
     </nav>
 </header>

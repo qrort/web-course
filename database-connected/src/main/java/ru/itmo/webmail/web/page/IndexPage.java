@@ -17,4 +17,7 @@ public class IndexPage extends Page {
     private void confirmationAccepted(HttpServletRequest request, Map<String, Object> view) {
         view.put("message", "Your account has been verified.");
     }
+    private void unauthorized(HttpServletRequest request, Map<String, Object> view) {
+        view.put("message", "Please, enter the system.");
+    }
 }
