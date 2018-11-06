@@ -1306,111 +1306,176 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="327" parent="3" name="Event"/>
-    <table id="328" parent="3" name="User"/>
-    <column id="329" parent="327" name="id">
+    <table id="327" parent="3" name="EmailConfirmation"/>
+    <table id="328" parent="3" name="Event"/>
+    <table id="329" parent="3" name="User"/>
+    <column id="330" parent="327" name="id">
       <Position>1</Position>
       <DataType>bigint(18)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="330" parent="327" name="userId">
+    <column id="331" parent="327" name="userId">
       <Position>2</Position>
       <DataType>bigint(18)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="331" parent="327" name="type">
+    <column id="332" parent="327" name="secret">
       <Position>3</Position>
-      <DataType>enum(&apos;ENTER&apos;, &apos;LOGOUT&apos;)|0e</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="332" parent="327" name="creationTime">
+    <column id="333" parent="327" name="creationTime">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="333" parent="327" name="index_Event_userId">
+    <index id="334" parent="327" name="unique_EmailConfirmation_userId">
       <ColNames>userId</ColNames>
+      <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="334" parent="327" name="index_Event_type">
-      <ColNames>type</ColNames>
+    <index id="335" parent="327" name="index_EmailConfirmation_secret">
+      <ColNames>secret</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="335" parent="327" name="index_Event_creationTime">
+    <index id="336" parent="327" name="index_EmailConfirmation_creationTime">
       <ColNames>creationTime</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="336" parent="327" name="PRIMARY">
+    <key id="337" parent="327" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="337" parent="327" name="fk_Event_userId">
+    <key id="338" parent="327" name="unique_EmailConfirmation_userId">
+      <ColNames>userId</ColNames>
+      <UnderlyingIndexName>unique_EmailConfirmation_userId</UnderlyingIndexName>
+    </key>
+    <foreign-key id="339" parent="327" name="fk_EmailConfirmation_userId">
       <ColNames>userId</ColNames>
       <RefSchemaName>u18a</RefSchemaName>
       <RefTableName>User</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="338" parent="328" name="id">
+    <column id="340" parent="328" name="id">
       <Position>1</Position>
       <DataType>bigint(18)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="328" name="login">
+    <column id="341" parent="328" name="userId">
+      <Position>2</Position>
+      <DataType>bigint(18)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="342" parent="328" name="type">
+      <Position>3</Position>
+      <DataType>enum(&apos;ENTER&apos;, &apos;LOGOUT&apos;)|0e</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="343" parent="328" name="creationTime">
+      <Position>4</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="344" parent="328" name="index_Event_userId">
+      <ColNames>userId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="345" parent="328" name="index_Event_type">
+      <ColNames>type</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="346" parent="328" name="index_Event_creationTime">
+      <ColNames>creationTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="347" parent="328" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="348" parent="328" name="fk_Event_userId">
+      <ColNames>userId</ColNames>
+      <RefSchemaName>u18a</RefSchemaName>
+      <RefTableName>User</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="349" parent="329" name="id">
+      <Position>1</Position>
+      <DataType>bigint(18)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="350" parent="329" name="login">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="328" name="email">
+    <column id="351" parent="329" name="email">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="328" name="passwordSha">
+    <column id="352" parent="329" name="passwordSha">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="328" name="creationTime">
+    <column id="353" parent="329" name="creationTime">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="343" parent="328" name="unique_User_login">
+    <column id="354" parent="329" name="confirmed">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="355" parent="329" name="unique_User_login">
       <ColNames>login</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="344" parent="328" name="unique_User_email">
+    <index id="356" parent="329" name="unique_User_email">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="345" parent="328" name="index_User_creationTime">
+    <index id="357" parent="329" name="index_User_creationTime">
       <ColNames>creationTime</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="346" parent="328" name="PRIMARY">
+    <index id="358" parent="329" name="index_User_confirmed">
+      <ColNames>confirmed</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="359" parent="329" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="347" parent="328" name="unique_User_login">
+    <key id="360" parent="329" name="unique_User_login">
       <ColNames>login</ColNames>
       <UnderlyingIndexName>unique_User_login</UnderlyingIndexName>
     </key>
-    <key id="348" parent="328" name="unique_User_email">
+    <key id="361" parent="329" name="unique_User_email">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>unique_User_email</UnderlyingIndexName>
     </key>

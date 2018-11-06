@@ -1,5 +1,6 @@
 package ru.itmo.webmail.model.repository.impl;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import ru.itmo.webmail.model.database.DatabaseUtils;
 import ru.itmo.webmail.model.domain.User;
 import ru.itmo.webmail.model.exception.RepositoryException;
@@ -10,6 +11,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import org.apache.commons.lang3.RandomStringUtils.*;
 
 public class UserRepositoryImpl implements UserRepository {
     private static final DataSource DATA_SOURCE = DatabaseUtils.getDataSource();
@@ -125,6 +127,8 @@ public class UserRepositoryImpl implements UserRepository {
                 // No operations.
             } else if ("creationTime".equalsIgnoreCase(columnName)) {
                 user.setCreationTime(resultSet.getTimestamp(i));
+            } else if ("confirmed".equalsIgnoreCase(columnName)) {
+                user.setConfirmed(resultSet.getBoolean(i));
             } else {
                 throw new RepositoryException("Unexpected column 'User." + columnName + "'.");
             }
@@ -155,6 +159,68 @@ public class UserRepositoryImpl implements UserRepository {
             }
         } catch (SQLException e) {
             throw new RepositoryException("Can't save User.", e);
+        }
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement(
+                    "INSERT INTO EmailConfirmation (userId, secret, creationTime) VALUES (?, ?, CURRENT_TIMESTAMP )",
+                    Statement.RETURN_GENERATED_KEYS)) {
+                statement.setLong(1, user.getId());
+                statement.setString(2, RandomStringUtils.random(50, true, true));
+                if (statement.executeUpdate() != 1) {
+                    throw new RepositoryException("Can't save EmailConfirmation.");
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't save EmailConfirmation.", e);
+        }
+    }
+
+
+    @Override
+    public void tryToConfirm(String secret) {
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement(
+                    "SELECT * FROM EmailConfirmation WHERE secret=?")) {
+                statement.setString(1, secret);
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    if (resultSet.next()) {
+                        User user = userById(statement.getMetaData(), resultSet);
+                        if (user != null) {
+                            confirm(user.getId());
+                        } else {
+                            throw new RepositoryException("Can't find user by EmailConfirmation.");
+                        }
+                    } else {
+                        throw new RepositoryException("Can't find EmailConfirmation by secret.");
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't find EmailConfirmation by secret.", e);
+        }
+    }
+
+    private User userById(ResultSetMetaData metaData, ResultSet resultSet) throws SQLException {
+        User user = null;
+        for (int i = 1; i <= metaData.getColumnCount(); i++) {
+            String columnName = metaData.getColumnName(i);
+            if ("userId".equalsIgnoreCase(columnName)) {
+                user = find(resultSet.getLong(i));
+            }
+        }
+        return user;
+    }
+    private void confirm(long userId) {
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement(
+                    "UPDATE User SET confirmed=TRUE WHERE id=?")) {
+                statement.setLong(1, userId);
+                if (statement.executeUpdate() != 1) {
+                    throw new RepositoryException("Can't update User.confirmed.");
+                }
+             }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't find User by id.");
         }
     }
 

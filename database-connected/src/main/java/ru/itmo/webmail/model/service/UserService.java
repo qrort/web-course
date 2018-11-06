@@ -69,9 +69,12 @@ public class UserService {
         if (password.length() > 32) {
             throw new ValidationException("Password can't be longer than 32");
         }
-
-        if (userRepository.findByLoginOrEmailAndPasswordSha(loginOrEmail, getPasswordSha(password)) == null) {
+        User user = userRepository.findByLoginOrEmailAndPasswordSha(loginOrEmail, getPasswordSha(password));
+        if (user == null) {
             throw new ValidationException("Invalid login or password");
+        }
+        if (!user.isConfirmed()) {
+            throw new ValidationException("Please confirm your email");
         }
     }
 
@@ -81,7 +84,11 @@ public class UserService {
     }
 
     public User authorize(String loginOrEmail, String password) {
-        return userRepository.findByLoginOrEmailAndPasswordSha(loginOrEmail, getPasswordSha(password));
+            return userRepository.findByLoginOrEmailAndPasswordSha(loginOrEmail, getPasswordSha(password));
+    }
+
+    public void tryToConfirm(String secret) {
+        userRepository.tryToConfirm(secret);
     }
 
     public User find(long userId) {

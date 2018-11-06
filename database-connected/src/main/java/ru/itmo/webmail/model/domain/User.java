@@ -8,7 +8,7 @@ public class User implements Serializable {
     private String login;
     private String email;
     private Date creationTime;
-    //private boolean confirmed;
+    private boolean confirmed;
 
     public long getId() {
         return id;
@@ -41,7 +41,7 @@ public class User implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
-/*
+
     public boolean isConfirmed() {
         return confirmed;
     }
@@ -49,5 +49,4 @@ public class User implements Serializable {
     public void setConfirmed(boolean confirmed) {
         this.confirmed = confirmed;
     }
-*/
 }

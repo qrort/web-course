@@ -9,6 +9,12 @@ public class IndexPage extends Page {
     }
 
     private void registrationDone(HttpServletRequest request, Map<String, Object> view) {
-        view.put("message", "You have been registered");
+        view.put("message", "You have been registered. Please check email for verification link.");
+    }
+    private void confirmationFailed(HttpServletRequest request, Map<String, Object> view) {
+        view.put("message", "Incorrect secret.");
+    }
+    private void confirmationAccepted(HttpServletRequest request, Map<String, Object> view) {
+        view.put("message", "Your account has been verified.");
     }
 }
