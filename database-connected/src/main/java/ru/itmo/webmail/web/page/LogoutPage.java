@@ -9,9 +9,7 @@ import java.util.Map;
 
 public class LogoutPage extends Page {
     private void action(HttpServletRequest request, Map<String, Object> view) {
-        User user = getUser();
-        getEventService().addEvent(new Event(user, Event.Type.LOGOUT));
-        request.getSession().removeAttribute(USER_ID_SESSION_KEY);
+        getUserService().unauthorize(request, getUser());
         throw new RedirectException("/index");
     }
 }

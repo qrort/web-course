@@ -18,13 +18,14 @@ public class TalksPage extends Page {
         String targetUser;
         String text;
     }
+
     private MessageService messageService = new MessageService();
 
     public void before(HttpServletRequest request, Map<String, Object> view) {
         super.before(request, view);
-       if (getUser() == null) {
+        if (getUser() == null) {
            throw new RedirectException("/index", "unauthorized");
-       }
+        }
     }
 
     private void send(HttpServletRequest request, Map <String, Object> view) {
@@ -33,34 +34,19 @@ public class TalksPage extends Page {
         message.setText(request.getParameter("text"));
         String targetUserLogin = request.getParameter("target_user_login");
         User targetUser = getUserService().findByLogin(targetUserLogin);
-        if (targetUser != null) {
+        try {
+            messageService.validateMessage(targetUser, message.getText());
             message.setTargetUserId(targetUser.getId());
-            try {
-                messageService.validateMessage(message);
-                messageService.send(message);
-            } catch (ValidationException e) {
-                view.put("target_user_login", targetUserLogin);
-                view.put("text", message.getText());
-                view.put("error", e.getMessage());
-                return;
-            }
-        } else {
+            messageService.send(message);
+        } catch (ValidationException e) {
             view.put("target_user_login", targetUserLogin);
             view.put("text", message.getText());
-            view.put("error", "Incorrect recipient");
-            return;
+            view.put("error", e.getMessage());
         }
     }
 
     private void action(HttpServletRequest request, Map<String, Object> view) {
-        List <Message> messages = messageService.findAll(getUser().getId());
-        for (Message message : messages) {
-            User sourceUser = getUserService().find(message.getSourceUserId());
-            message.setSourceUserLogin(sourceUser.getLogin());
-            User targerUser = getUserService().find(message.getTargetUserId());
-            message.setTargetUserLogin(targerUser.getLogin());
-        }
-        view.put("messages", messages);
+        view.put("messages", messageService.findAll(getUser().getId()));
     }
 
     public void after(HttpServletRequest request, Map<String, Object> view) {

@@ -9,8 +9,6 @@ public class Message implements Serializable {
     private long targetUserId;
     private String text;
     private Date creationTime;
-    private String sourceUserLogin;
-    private String targetUserLogin;
     public long getId() {
         return id;
     }
@@ -49,21 +47,5 @@ public class Message implements Serializable {
 
     public void setCreationTime(Date creationTime) {
         this.creationTime = creationTime;
-    }
-
-    public String getSourceUserLogin() {
-        return sourceUserLogin;
-    }
-
-    public void setSourceUserLogin(String sourceUserLogin) {
-        this.sourceUserLogin = sourceUserLogin;
-    }
-
-    public String getTargetUserLogin() {
-        return targetUserLogin;
-    }
-
-    public void setTargetUserLogin(String targetUserLogin) {
-        this.targetUserLogin = targetUserLogin;
     }
 }

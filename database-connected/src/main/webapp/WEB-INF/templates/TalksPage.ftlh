@@ -1,3 +1,4 @@
+<#-- @ftlvariable name="messages" type="ru.itmo.webmail.model.service.MessageService.MessageView[]" -->
 <#import "common.ftl" as c>
 
 <@c.page>
@@ -40,6 +41,7 @@
         <tr>
             <th>#</th>
             <th>From</th>
+            <th>To</th>
             <th>Text</th>
         </tr>
         </thead>
@@ -50,10 +52,10 @@
                 ${message_index + 1}
             </td>
             <td>
-                ${message.sourceUserLogin}
+                ${message.sourceUser.login}
             </td>
             <td>
-                ${message.targetUserLogin}
+                ${message.targetUser.login}
             </td>
             <td>
                 ${message.text}

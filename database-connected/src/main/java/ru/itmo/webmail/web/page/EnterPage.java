@@ -23,9 +23,7 @@ public class EnterPage extends Page {
             return;
         }
 
-        User user = getUserService().authorize(loginOrEmail, password);
-        request.getSession(true).setAttribute(USER_ID_SESSION_KEY, user.getId());
-        getEventService().addEvent(new Event(user, Event.Type.ENTER));
+        getUserService().authorize(request, loginOrEmail, password);
         throw new RedirectException("/index");
     }
 

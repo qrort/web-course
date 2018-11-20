@@ -1,19 +1,25 @@
 package ru.itmo.webmail.model.service;
 
 import com.google.common.hash.Hashing;
+import ru.itmo.webmail.model.domain.Event;
 import ru.itmo.webmail.model.domain.User;
 import ru.itmo.webmail.model.exception.ValidationException;
 import ru.itmo.webmail.model.repository.UserRepository;
 import ru.itmo.webmail.model.repository.impl.UserRepositoryImpl;
 
+import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
+
+import static ru.itmo.webmail.web.page.Page.USER_ID_SESSION_KEY;
 
 @SuppressWarnings("UnstableApiUsage")
 public class UserService {
     private static final String USER_PASSWORD_SALT = "dc3475f2b301851b";
 
     private UserRepository userRepository = new UserRepositoryImpl();
+    private EventService eventService = new EventService();
+
     public void validateRegistration(User user, String password) throws ValidationException {
         if (user.getLogin() == null || user.getLogin().isEmpty()) {
             throw new ValidationException("Login is required");
@@ -83,12 +89,20 @@ public class UserService {
                 StandardCharsets.UTF_8).toString();
     }
 
-    public User authorize(String loginOrEmail, String password) {
-            return userRepository.findByLoginOrEmailAndPasswordSha(loginOrEmail, getPasswordSha(password));
+    public User authorize(HttpServletRequest request, String loginOrEmail, String password) {
+        User user = userRepository.findByLoginOrEmailAndPasswordSha(loginOrEmail, getPasswordSha(password));
+        request.getSession(true).setAttribute(USER_ID_SESSION_KEY, user.getId());
+        eventService.addEvent(new Event(user, Event.Type.ENTER));
+        return user;
     }
 
-    public void tryToConfirm(String secret) {
-        userRepository.tryToConfirm(secret);
+    public void unauthorize(HttpServletRequest request, User user) {
+        eventService.addEvent(new Event(user, Event.Type.LOGOUT));
+        request.getSession().removeAttribute(USER_ID_SESSION_KEY);
+    }
+
+    public void confirm(long userId) {
+        userRepository.confirm(userId);
     }
 
     public User find(long userId) {

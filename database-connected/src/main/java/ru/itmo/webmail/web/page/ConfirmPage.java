@@ -9,7 +9,8 @@ import java.util.Map;
 public class ConfirmPage extends Page {
     private void action(HttpServletRequest request, Map<String, Object> view) {
         try {
-            getUserService().tryToConfirm(request.getParameter("secret"));
+            long userId = getEmailConfirmationService().findUserIdBySecret(request.getParameter("secret"));
+            getUserService().confirm(userId);
         } catch (RepositoryException e) {
             throw new RedirectException("/index", "confirmationFailed");
         }
