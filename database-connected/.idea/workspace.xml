@@ -7,29 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2b2432a-f51f-48d3-a09c-c6f875875072" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/ConfirmPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webmail_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/webmail_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/EmailConfirmationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/EmailConfirmationRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e41ffbbb-f226-4d79-bb0f-aa3d5a643783.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e41ffbbb-f226-4d79-bb0f-aa3d5a643783.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/IndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/IndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/web/page/IndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/web/page/IndexPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/web/page/IndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/web/page/IndexPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webmail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webmail.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../framework1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../framework1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/MessageRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/MessageRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/TalksPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/TalksPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/TalksPage.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/TalksPage.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/domain/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/model/domain/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/web/page/UsersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/webmail/web/page/UsersPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/domain/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/model/domain/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/web/page/UsersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webmail/WEB-INF/classes/ru/itmo/webmail/web/page/UsersPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webmail/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/webmail/css/form.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,8 +74,10 @@
         <counts>
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,41 +85,49 @@
           <entry key="EmailConfirmaion" value="1" />
           <entry key="Event" value="1" />
           <entry key="class" value="2" />
-          <entry key="ftl" value="5" />
-          <entry key="ftlh" value="17" />
+          <entry key="css" value="4" />
+          <entry key="ftl" value="8" />
+          <entry key="ftlh" value="40" />
+          <entry key="html" value="1" />
           <entry key="iml" value="1" />
           <entry key="index_event_creationtime" value="1" />
-          <entry key="java" value="105" />
+          <entry key="java" value="188" />
           <entry key="properties" value="6" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
+          <entry key="CSS" value="4" />
           <entry key="Database Element" value="2" />
-          <entry key="FTL" value="22" />
+          <entry key="FTL" value="48" />
+          <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="105" />
+          <entry key="JAVA" value="188" />
           <entry key="Properties" value="6" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ftlh" value="217" />
-          <entry key="java" value="4964" />
+          <entry key="css" value="27" />
+          <entry key="dummy" value="30" />
+          <entry key="ftl" value="51" />
+          <entry key="ftlh" value="635" />
+          <entry key="java" value="8091" />
           <entry key="properties" value="9" />
-          <entry key="txt" value="4" />
+          <entry key="txt" value="59" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="FTL" value="217" />
-          <entry key="JAVA" value="4964" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="CSS" value="27" />
+          <entry key="FTL" value="686" />
+          <entry key="JAVA" value="8091" />
+          <entry key="PLAIN_TEXT" value="89" />
           <entry key="Properties" value="9" />
           <entry key="XML" value="2" />
         </counts>
@@ -134,11 +137,61 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="164" column="52" selection-start-line="164" selection-start-column="52" selection-end-line="164" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/EmailConfirmationRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/EmailConfirmationRepositoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/NotFoundPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/EnterPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="1020">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3676#3677#0" expanded="true" />
                 <element signature="e#3727#3728#0" expanded="true" />
               </folding>
             </state>
@@ -146,72 +199,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="167" column="80" lean-forward="true" selection-start-line="167" selection-start-column="80" selection-end-line="167" selection-end-column="80" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profile.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/classes/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/EventRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/FrontServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/ConfirmPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="90">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,15 +211,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/Page.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/UsersPage.ftlh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/IndexPage.ftlh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/IndexPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -238,6 +242,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -249,6 +254,9 @@
       <find>??</find>
       <find>database.user</find>
       <find>application.pro</find>
+      <find>findAll</find>
+      <find>!confirmed</find>
+      <find>ran</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -262,23 +270,36 @@
       <list>
         <option value="$PROJECT_DIR$/profile.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/RegisterPage.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/EnterPage.ftlh" />
         <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/EventRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/Page.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/EventService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/EventRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/LogoutPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/EnterPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/database/DatabaseUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/RegisterPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/IndexPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/ConfirmPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/UserService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/TalksPage.ftlh.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/TalkService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/EnterPage.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/IndexPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/EventService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/MessageRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/EnterPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/UsersPage.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/form.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/UsersPage.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/TalksPage.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/TalksPage.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/MessageRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/ConfirmPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/EmailConfirmationRepositoryImpl.java" />
       </list>
     </option>
   </component>
@@ -307,6 +328,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -377,6 +400,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="webmail" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webmail" type="b2602c69:ProjectViewProjectNode" />
+              <item name="database-connected" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webmail" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -432,6 +465,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webmail" type="b2602c69:ProjectViewProjectNode" />
+              <item name="database-connected" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -458,17 +499,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="pro&#9;ACTION&#9;ActivateProjectToolWindow&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;databa&#9;ACTION&#9;ActivateDatabaseToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541532101883" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541587845790" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ajax/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -575,18 +616,28 @@
       <updated>1540976476229</updated>
       <workItem from="1540976477526" duration="3202000" />
       <workItem from="1541360082882" duration="1958000" />
-      <workItem from="1541441194656" duration="22270000" />
+      <workItem from="1541441194656" duration="29492000" />
+      <workItem from="1541580129644" duration="5240000" />
+      <workItem from="1541587357338" duration="464000" />
     </task>
+    <task id="LOCAL-00001" summary="added email verification and apache dependency">
+      <created>1541532165435</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541532165435</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27430000" />
+    <option name="totallyTimeSpent" value="40356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25538972" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26091763" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -595,10 +646,9 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Learn" order="7" />
       <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.3294979" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3671548" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -610,6 +660,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3294979" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -627,17 +678,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/ConfirmPage.java</url>
-          <line>11</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added email verification and apache dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="added email verification and apache dependency" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/webmail.iml">
@@ -647,13 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/UsersPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -678,16 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/database/DatabaseUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -695,181 +721,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/RegisterPage.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/EventService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/NotFoundPage.ftlh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/EnterPage.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/IndexPage.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/EventRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/EnterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/NotFoundPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/LogoutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/IndexPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e41ffbbb-f226-4d79-bb0f-aa3d5a643783/schema/u18a/table/EmailConfirmaion">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://e41ffbbb-f226-4d79-bb0f-aa3d5a643783/schema/u18a/table/EmailConfirmaion" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/mariadb/jdbc/mariadb-java-client/2.3.0/mariadb-java-client-2.3.0.jar!/org/mariadb/jdbc/MariaDbPreparedStatementClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="235" selection-start-line="235" selection-end-line="235" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/RegisterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/FrontServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/ConfirmPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#3727#3728#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/EventRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -885,20 +743,270 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/TalksPage.ftlh.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Talk.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/EventService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="167" column="80" lean-forward="true" selection-start-line="167" selection-start-column="80" selection-end-line="167" selection-end-column="80" />
+          <caret line="9" column="5" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/MessageRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/FrontServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="96" column="44" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/LogoutPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/RegisterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/RegisterPage.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/datatable.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/UsersPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/NotFoundPage.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/EnterPage.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/TalksPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="62" column="39" lean-forward="true" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/EventRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/EventRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/domain/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/TalksPage.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/MessageRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/NotFoundPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3676#3677#0" expanded="true" />
+            <element signature="e#3727#3728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/ConfirmPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/UsersPage.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/IndexPage.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/IndexPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/web/page/EnterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/UserRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="164" column="52" selection-start-line="164" selection-start-column="52" selection-end-line="164" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/EmailConfirmationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/itmo/webmail/model/repository/impl/EmailConfirmationRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>

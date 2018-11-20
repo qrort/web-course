@@ -8,8 +8,9 @@ public class Message implements Serializable {
     private long sourceUserId;
     private long targetUserId;
     private String text;
-    private String interlocutor;
     private Date creationTime;
+    private String sourceUserLogin;
+    private String targetUserLogin;
     public long getId() {
         return id;
     }
@@ -50,11 +51,19 @@ public class Message implements Serializable {
         this.creationTime = creationTime;
     }
 
-    public String getInterlocutor() {
-        return interlocutor;
+    public String getSourceUserLogin() {
+        return sourceUserLogin;
     }
 
-    public void setInterlocutor(String interlocutor) {
-        this.interlocutor = interlocutor;
+    public void setSourceUserLogin(String sourceUserLogin) {
+        this.sourceUserLogin = sourceUserLogin;
+    }
+
+    public String getTargetUserLogin() {
+        return targetUserLogin;
+    }
+
+    public void setTargetUserLogin(String targetUserLogin) {
+        this.targetUserLogin = targetUserLogin;
     }
 }

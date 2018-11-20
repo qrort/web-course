@@ -11,9 +11,9 @@ public class Event implements Serializable {
     private Type type;
     private Date creationTime;
 
-    public Event(User user, Type state) {
-        userId = user.getId();
-        type = state;
+    public Event(User user, Type type) {
+        this.userId = user.getId();
+        this.type = type;
     }
 
     public long getId() {

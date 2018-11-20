@@ -13,6 +13,11 @@ import java.util.List;
 import java.util.Map;
 
 public class TalksPage extends Page {
+    private class MessageOut {
+        String sourceUser;
+        String targetUser;
+        String text;
+    }
     private MessageService messageService = new MessageService();
 
     public void before(HttpServletRequest request, Map<String, Object> view) {
@@ -51,7 +56,9 @@ public class TalksPage extends Page {
         List <Message> messages = messageService.findAll(getUser().getId());
         for (Message message : messages) {
             User sourceUser = getUserService().find(message.getSourceUserId());
-            message.setInterlocutor(sourceUser.getLogin());
+            message.setSourceUserLogin(sourceUser.getLogin());
+            User targerUser = getUserService().find(message.getTargetUserId());
+            message.setTargetUserLogin(targerUser.getLogin());
         }
         view.put("messages", messages);
     }

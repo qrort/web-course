@@ -46,8 +46,9 @@ public class MessageRepositoryImpl implements MessageRepository {
         List<Message> messages = new ArrayList<>();
         try (Connection connection = DATA_SOURCE.getConnection()) {
             try (PreparedStatement statement = connection.prepareStatement(
-                    "SELECT * FROM Message WHERE targetUserId=? ORDER BY id DESC")) {
+                    "SELECT * FROM Message WHERE (targetUserId=? OR sourceUserId=?) ORDER BY id DESC")) {
                 statement.setLong(1, userId);
+                statement.setLong(2, userId);
                 try (ResultSet resultSet = statement.executeQuery()) {
                     while (resultSet.next()) {
                         messages.add(toMessage(statement.getMetaData(), resultSet));
@@ -55,7 +56,7 @@ public class MessageRepositoryImpl implements MessageRepository {
                 }
             }
         } catch (SQLException e) {
-            throw new RepositoryException("Can't find all users.", e);
+            throw new RepositoryException("Can't find User.", e);
         }
         return messages;
     }
